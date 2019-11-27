@@ -1,6 +1,0 @@
-﻿  Main.cpp
-  ObArray.cpp
-  Generating Code...
-C:\Users\olaru\Desktop\facultate\oop\teme\Tema_2\Tema_2\ObArray.cpp(214): warning C4717: 'ObArray::getdimens': recursive on all control paths, function will cause runtime stack overflow
-C:\Users\olaru\Desktop\facultate\oop\teme\Tema_2\Tema_2\ObArray.cpp(124): warning C4715: 'ObArray::insertAt': not all control paths return a value
-  Tema_2.vcxproj -> C:\Users\olaru\Desktop\facultate\oop\teme\Tema_2\Debug\Tema_2.exe
