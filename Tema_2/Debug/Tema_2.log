@@ -1,0 +1,7 @@
+﻿  Main.cpp
+  ObArray.cpp
+  Puncte.cpp
+  Generating Code...
+C:\Users\olaru\Desktop\Tema_2\Tema_2\ObArray.cpp(195): warning C4715: 'ObArray::insertAt': not all control paths return a value
+C:\Users\olaru\Desktop\Tema_2\Tema_2\ObArray.cpp(483): warning C4715: 'ObArray::operator&=': not all control paths return a value
+  Tema_2.vcxproj -> C:\Users\olaru\Desktop\Tema_2\Debug\Tema_2.exe
