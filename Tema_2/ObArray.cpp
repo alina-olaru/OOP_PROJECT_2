@@ -568,3 +568,63 @@ bool ObArray::operator==(ObArray& ob)
 
 	return true;
 }
+
+ObArray ObArray::operator+(ObArray a)
+{
+	ObArray b;
+	b.size = a.size + 1;
+	return b;
+	
+}
+
+/*
+ObArray& ObArray::operator=(const ObArray& ob)
+{
+	if(this!=&ob)
+	{
+		p = new int[2];
+		p[0] = ob.p[0];
+		p[1] = ob.p[1];
+	}
+	return *this;
+}
+*/
+/*
+ObArray::ObArray(const ObArray& ob)
+{
+	p = new int[2];
+	p[0] = ob.p[0];
+	p[1] = ob.p[1];
+}
+*/
+// transmiterea parametrilor catre constructorul din clasa de baza
+/*
+ObArray::ObArray(const ObArray& ob):Object(ob)
+{//apel explicit constructor copiere din baza :B(ob)
+	p = new int[2];
+	p[0] = ob.p[0];
+	p[1] = ob.p[1];
+}*/
+
+
+ObArray ObArray::functie_cu_temp()
+{
+	ObArray temp(*this);
+	return temp;
+}
+
+ObArray ObArray::funtie_cu_ref()
+{
+	return *this;
+}
+
+ObArray ObArray::functie_cu_temp_cu_ref()
+{
+	ObArray temp(*this);
+	return temp;
+}
+
+void ObArray::f(string c)
+{
+	cout << "functia f din baza cu paramtrul string= " << c << endl;
+}

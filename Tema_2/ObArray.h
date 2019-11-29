@@ -59,4 +59,11 @@ public:
 	  int operator|=(ObArray* ob);
 	  //returneaza daca Array ul curent are aceeasi referinta (si dim) cu un alt array(parametru)
 	  bool operator==(ObArray& ob);
+	  ObArray operator+(ObArray);
+	  ObArray& operator = (const ObArray&);
+	  ObArray funtie_cu_ref();
+	  ObArray functie_cu_temp();
+	  ObArray functie_cu_temp_cu_ref();
+	 // ObArray(const ObArray&);
+	  void f(string c);
 };

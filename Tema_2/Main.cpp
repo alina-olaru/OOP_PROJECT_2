@@ -19,8 +19,41 @@ void afis_meniu() {
 	cout << "7)\t/Intoarce elementul de la pozitia i" << endl;
 	cout << "8)\tIesire din program" << endl;
 }
+
+void identificare_tip_rulare()
+{
+	ObArray c1;
+	Object* c2 = new Punct();
+	Object* c3 = new NrComplexe();
+	Object* c4;
+	cout << typeid(c1).name() << endl;
+	cout << typeid(c2).name() << endl;
+	cout << typeid(c3).name() << endl;
+	cout << typeid(c4).name() << endl;
+
+	if (typeid(c3) != typeid(c2))
+	{
+		cout << "tipuri diferite" << endl;
+	}
+	else
+	{
+		cout << "acelasi tip";
+	}
+	if (typeid(c1) != typeid(c2))
+	{
+		cout << "tipuri diferite" << endl;
+	}
+}
 int main() {
 
+
+	//identificare_tip_rulare();
+	
+
+
+
+
+	
 	//fac un obiect de tip ObArray si apelez metoda de citire pt a completa campurile necesare clasei.
 	ObArray* test = new ObArray();
 	test->citire();
